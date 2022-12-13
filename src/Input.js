@@ -1,3 +1,5 @@
+import Star from "./Star.js"
+
 function Input({func}){
 
     const search = () =>{
@@ -18,7 +20,7 @@ function Input({func}){
                 Array.from(Array(5).keys()).map(radio=>
                     <span key={radio}>
                         <input name="group1" type="radio" value={radio+1} id={"r-"+radio}/>
-                        <label htmlFor={"r-"+radio}>{radio+1}</label>
+                        <label htmlFor={"r-"+radio}>{<Star count={radio+1}/>}</label>
                     </span>
                 )
             }

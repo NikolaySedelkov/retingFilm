@@ -16,6 +16,15 @@
   align-items: flex-end;
 }
 
+#group1{
+  display: flex;
+  flex-direction: column;
+}
+
+#group1 span{
+  display: flex;
+}
+
 .conteiner__item-film{
   height: 100px;
   width: 60%;
